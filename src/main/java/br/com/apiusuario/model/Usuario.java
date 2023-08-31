@@ -3,6 +3,7 @@ package br.com.apiusuario.model;
 import java.time.LocalDateTime;
 import java.util.Date;
 
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,11 +26,14 @@ public class Usuario {
 	
 	private Boolean emUso;
 	
-	private Date dtNascimento;
+//	private String dtNascimento;
 	
 	private LocalDateTime dtCadastro;
 	
 	private Double Salario;
+	
+//	@Embedded
+//	private Endereco endereco;
 	
 	
 	
@@ -74,13 +78,14 @@ public class Usuario {
 		this.emUso = emUso;
 	}
 
-	public Date getDtNascimento() {
-		return dtNascimento;
-	}
 
-	public void setDtNascimento(Date dtNascimento) {
-		this.dtNascimento = dtNascimento;
-	}
+//	public String getDtNascimento() {
+//		return dtNascimento;
+//	}
+//
+//	public void setDtNascimento(String dtNascimento) {
+//		this.dtNascimento = dtNascimento;
+//	}
 
 	public Double getSalario() {
 		return Salario;
